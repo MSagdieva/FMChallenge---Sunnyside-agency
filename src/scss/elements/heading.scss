@@ -2,7 +2,8 @@
             margin-top:-50px;
             width: 100%;
             top:0;
-            background: url("../img/main-heading.jpg");
+            position: relative;
+            background: url("../img/desktop/image-header.jpg");
             background-size: cover;
         @media (max-width:$md3+px) {
             background-clip: content-box;
@@ -10,19 +11,32 @@
             background-position: center;
 
         }
-    &_btn {
-        position:absolute;
-        right:30px;
-        border: 2px solid rgba(255, 255, 255, 1);
-        @include adaptive-value('font-size', 22, 14, 0);
-        padding: 15px 40px;
-        @media (max-width:$md3+px) {
-            padding: 5px 10px;
+        &_btn {
+            padding: 15px 40px 15px 0;
+            text-transform: none;
+            line-height: 2;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 5px;
+            @include adaptive-value("font-size",
+            18,
+            14,
+            0);
+            &:after {
+                display: block;
+                background: url("../img/icon-arrow-down.svg");
+                background-repeat: no-repeat;
+                background-position: bottom;
+                content: "";
+                height: 100px;
+                width: 30px;
+
+            }
         }
-    }
 
     &__container {
-        padding: 100px 20px;
+        padding: 150px 20px;
     }
 
     &__content {
