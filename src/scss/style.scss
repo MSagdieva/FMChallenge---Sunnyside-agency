@@ -1,7 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald:regular&display=swap&subset=cyrillic-ext");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,regular,600&display=swap&subset=cyrillic-ext");
 @import url('/src/scss/normalize.css');
-
+@font-face {
+    font-family: "Fraunces";
+    src: url("/fonts/Fraunces-Black.woff2");
+}
+@font-face {
+    font-family: "Barlow";
+    src: url("/fonts/Barlow-SemiBold.woff2");
+}
 @import 'mixins/adaptive-value';
 @import 'support/variables';
 
@@ -28,13 +33,10 @@ ul{
     padding: 0;
     list-style: none;
 }
-.section{
-margin: 150px 0 0 0;
-}
+
 .title {
     font-family: $fontFamily;
     font-weight: normal;
-    text-transform: uppercase;
 }
 h2.title{
     @include adaptive-value('font-size', 26, 18, 0);
@@ -55,7 +57,7 @@ h2.title{
     line-height: 1.4;
 }
 .btn {
-    font-family: $SecondFontFamily;
+    font-family: $fontFamily;
     font-weight: 600;
     line-height: 22 / 16 * 100%;
     text-transform: uppercase;
@@ -64,6 +66,7 @@ h2.title{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    color: #24303E;
 }
 
 // ---------------container styles-----------------------//

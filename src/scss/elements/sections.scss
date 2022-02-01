@@ -1,5 +1,5 @@
 .section{
-    margin-top: 30px;
+    width: 100%;
     &__header{
     }
 }
@@ -11,7 +11,7 @@
 }  
 } 
 .main-block:nth-child(3) .text-container:nth-child(1){
-    background: url("../img/desktop/image-photography.jpg");
+    background: url("../img/desktop/image-graphic-design.jpg");
 }
     .main-block:nth-child(3) .text-container:nth-child(2){
         background: url("../img/desktop/image-photography.jpg");
@@ -33,8 +33,9 @@
 
 }
 }
-.text-container { 
-
+.main-block.info-block .text-container { 
+padding: 150px;
+background-color: #F2F2F2;
 .text { 
     @include adaptive-value('font-size', 16, 12, 0);
 }
@@ -43,15 +44,17 @@
     &__header{
         margin:0;
     }
-    .info-block{
+    .main-block.info-block div{
+        box-sizing: border-box;
+        width: 50%;
+    }
+    .main-block.info-block{
         display:flex;
         @media (max-width: $md4+px){
             flex-wrap: wrap;
         }    
     }
     .img-container{
-        margin-right: 30px;
-        flex:1 0 200px;
         padding: 0;
         @media (max-width: $md4+px){
             height: 200px;
@@ -60,7 +63,6 @@
     }
 
     .info-block~.info-block{
-        margin-top: 30px;
         @media (max-width: $md4+px){
             margin-top: 0px;
         }
@@ -73,3 +75,17 @@
 
 }
 
+.info-block__container.introduction__information{
+    flex-wrap: nowrap;
+}
+
+.client-photo{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    overflow: hidden;
+    .photo{
+        width: 100%;
+        height: 100%;
+    }
+}

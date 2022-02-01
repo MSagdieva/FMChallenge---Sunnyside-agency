@@ -105,57 +105,11 @@
 
 .footer__menu{
         .menu__list{
-            display:grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 35px 35px;
+            display:flex;
+            justify-content: center;
         }
         .menu__link{
             margin:0;
             @include adaptive-value('font-size', 14, 10, 0);
         }
-@media (max-width: $md4+px){
-
-        .menu__list{
-            display: block;
-            flex-direction: row;
-            width:initial;
-            flex-wrap:nowrap;
-            align-items:center;
-            height: initial;
-            overflow: scroll;
-            right: 0;
-            top:0;
-            margin: 20px;
-            text-align: center;}
-        .menu__link{
-            font-size: 10px;
-            width: 100%;
-            margin: 10px 0;
-            padding:0;
-            
-        }
-        .menu__body{
-            min-width: 0;
-            margin: 0;
-            width: 100%;
-
-        }
-}
-
-@media (max-width: $md3+px) {
-    .menu__list{
-    position: relative;
-    align-content:center;
-    justify-content:flex-end;
-    width: 60%;
-    right:0;}
-
-    .menu__body{
-        min-width: 0;
-        margin: 0;
-        width: 100%;
-
-    }
-}
-
 }

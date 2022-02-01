@@ -1,8 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald:regular&display=swap&subset=cyrillic-ext");
-
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,regular,600&display=swap&subset=cyrillic-ext");
-
 @import url("/src/scss/normalize.css");
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("/fonts/Fraunces-Black.woff2");
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("/fonts/Barlow-SemiBold.woff2");
+}
 
 body {
   box-sizing: border-box;
@@ -20,14 +26,9 @@ ul {
   list-style: none;
 }
 
-.section {
-  margin: 150px 0 0 0;
-}
-
 .title {
-  font-family: "Oswald";
+  font-family: "Fraunces";
   font-weight: normal;
-  text-transform: uppercase;
 }
 
 h2.title {
@@ -38,13 +39,13 @@ h2.title {
 }
 
 .text {
-  font-family: "Open Sans";
+  font-family: "Barlow";
   font-weight: 300;
   line-height: 1.4;
 }
 
 .btn {
-  font-family: "Open Sans";
+  font-family: "Fraunces";
   font-weight: 600;
   line-height: 137.5%;
   text-transform: uppercase;
@@ -53,6 +54,7 @@ h2.title {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  color: #24303E;
 }
 
 ._container {
@@ -103,7 +105,7 @@ h2.title {
 
 .menu__link {
   font-size: 14px;
-  font-family: "Open Sans";
+  font-family: "Barlow";
   font-weight: 600;
   margin: 0;
   padding: 20px;
@@ -120,9 +122,8 @@ h2.title {
 }
 
 .footer__menu .menu__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 35px 35px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer__menu .menu__link {
@@ -133,6 +134,7 @@ h2.title {
 .main-heading {
   margin-top: -50px;
   width: 100%;
+  height: 100vh;
   top: 0;
   position: relative;
   background: url("../img/desktop/image-header.jpg");
@@ -162,7 +164,6 @@ h2.title {
 
 .main-heading__container {
   padding: 150px 20px;
-  min-height: 500px;
 }
 
 .main-heading__content {
@@ -191,7 +192,7 @@ h2.title {
 }
 
 .section {
-  margin-top: 30px;
+  width: 100%;
 }
 
 .info-block__container {
@@ -204,7 +205,7 @@ h2.title {
 }
 
 .main-block:nth-child(3) .text-container:nth-child(1) {
-  background: url("../img/desktop/image-photography.jpg");
+  background: url("../img/desktop/image-graphic-design.jpg");
 }
 
 .main-block:nth-child(3) .text-container:nth-child(2) {
@@ -231,7 +232,12 @@ h2.title {
   min-height: 100px;
 }
 
-.text-container .text {
+.main-block.info-block .text-container {
+  padding: 150px;
+  background-color: #F2F2F2;
+}
+
+.main-block.info-block .text-container .text {
   font-size: calc(12px + 4 * ((100vw - 320px) / 1600));
 }
 
@@ -239,29 +245,46 @@ h2.title {
   margin: 0;
 }
 
-.main_content .info-block {
+.main_content .main-block.info-block div {
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.main_content .main-block.info-block {
   display: flex;
 }
 
 .main_content .img-container {
-  margin-right: 30px;
-  flex: 1 0 200px;
   padding: 0;
 }
 
-.main_content .info-block ~ .info-block {
-  margin-top: 30px;
+.info-block__container.introduction__information {
+  flex-wrap: nowrap;
+}
+
+.client-photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.client-photo .photo {
+  width: 100%;
+  height: 100%;
 }
 
 .footer__content {
-  background-color: #329af0;
+  background-color: #90D4C6;
   color: #fff;
-  font-family: "Open Sans";
+  font-family: "Barlow";
   font-weight: 300;
 }
 
 .footer__container {
   font-size: calc(10px + 4 * ((100vw - 320px) / 1600));
+  margin: 0 auto;
+  text-align: center;
 }
 
 .footer__container hr.line {
@@ -270,55 +293,19 @@ h2.title {
   background-color: #a8a8a8;
 }
 
-.footer .menu__body {
-  width: 60%;
-  min-width: 400px;
+.footer__icon-image {
+  fill: #2C7566;
+  stroke: red;
+  width: calc(80px + 60 * ((100vw - 320px) / 1600));
 }
 
-.contacts {
-  font-weight: 600;
+.footer .menu__link a {
+  color: #458D7E;
+}
+
+.socials {
   display: flex;
-}
-
-.contacts__adress {
-  display: inline-block;
-  flex-grow: 2;
-  flex-basis: 250px;
-  text-align: center;
-  margin: 36px 0;
-}
-
-.contacts__phone {
-  display: inline-block;
-  flex-grow: 1;
-  margin: 34px 0;
-}
-
-.contacts__email {
-  display: inline-block;
-  flex-grow: 1;
-  margin: 36px 0;
-  text-align: right;
-}
-
-.phone-number {
-  font-size: 18px;
-  margin: 0;
-}
-
-.copyright {
-  display: flex;
-  padding: 20px 0;
-  justify-content: space-between;
-}
-
-.copyright__text {
-  flex-grow: 1;
-}
-
-.copyright__author {
-  flex-grow: 1;
-  text-align: right;
+  justify-content: center;
 }
 
 @media (max-width: 1122px) {
@@ -362,20 +349,6 @@ h2.title {
   .menu__link {
     padding: 5px 0 5px 0;
     margin: 0 20px 0 0;
-  }
-
-  .footer__menu .menu__list {
-    position: relative;
-    align-content: center;
-    justify-content: flex-end;
-    width: 60%;
-    right: 0;
-  }
-
-  .footer__menu .menu__body {
-    min-width: 0;
-    margin: 0;
-    width: 100%;
   }
 
   .main-heading {
@@ -473,33 +446,6 @@ h2.title {
     bottom: 2px;
   }
 
-  .footer__menu .menu__list {
-    display: block;
-    flex-direction: row;
-    width: initial;
-    flex-wrap: nowrap;
-    align-items: center;
-    height: initial;
-    overflow: scroll;
-    right: 0;
-    top: 0;
-    margin: 20px;
-    text-align: center;
-  }
-
-  .footer__menu .menu__link {
-    font-size: 10px;
-    width: 100%;
-    margin: 10px 0;
-    padding: 0;
-  }
-
-  .footer__menu .menu__body {
-    min-width: 0;
-    margin: 0;
-    width: 100%;
-  }
-
   .main-heading__content {
     background: linear-gradient(90deg, rgba(0, 91, 193, 0.6), rgba(0, 91, 193, 0.6) 60%, rgba(0, 0, 0, 0) 60%);
   }
@@ -513,7 +459,7 @@ h2.title {
     font-size: 30px;
   }
 
-  .main_content .info-block {
+  .main_content .main-block.info-block {
     flex-wrap: wrap;
   }
 
@@ -528,30 +474,5 @@ h2.title {
 
   .main_content .ill {
     position: static;
-  }
-
-  .contacts {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .contacts__adress {
-    flex-basis: 0;
-    margin: 10px 0;
-  }
-
-  .contacts__email {
-    text-align: center;
-    margin: 10px 0;
-  }
-
-  .copyright {
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .copyright__author {
-    text-align: center;
-    margin-top: 20px;
   }
 }
