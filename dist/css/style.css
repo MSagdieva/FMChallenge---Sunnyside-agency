@@ -146,7 +146,7 @@ h2.title {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 5px;
+  bottom: 30px;
   font-size: calc(14px + 4 * ((100vw - 320px) / 1600));
 }
 
@@ -154,14 +154,15 @@ h2.title {
   display: block;
   background: url("../img/icon-arrow-down.svg");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   content: "";
-  height: 100px;
+  height: 150px;
   width: 30px;
 }
 
 .main-heading__container {
   padding: 150px 20px;
+  min-height: 500px;
 }
 
 .main-heading__content {
@@ -202,8 +203,12 @@ h2.title {
   flex: 1.5 0.8 200px;
 }
 
-.info-block__container .info-block ~ .info-block {
-  margin-left: 30px;
+.main-block:nth-child(3) .text-container:nth-child(1) {
+  background: url("../img/desktop/image-photography.jpg");
+}
+
+.main-block:nth-child(3) .text-container:nth-child(2) {
+  background: url("../img/desktop/image-photography.jpg");
 }
 
 .img-container {
@@ -212,7 +217,7 @@ h2.title {
   overflow: hidden;
 }
 
-.ill {
+.img-container .ill {
   position: absolute;
   top: 0;
   left: 0;
@@ -506,10 +511,6 @@ h2.title {
 
   .main-heading__title {
     font-size: 30px;
-  }
-
-  .info-block__container .info-block ~ .info-block {
-    margin-left: 0;
   }
 
   .main_content .info-block {
