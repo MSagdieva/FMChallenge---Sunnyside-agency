@@ -4,11 +4,8 @@
         display: flex;
         list-style: none;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         margin: 0;
-        @media (max-width: $md2+px){
-            justify-content:flex-end;
-        }
         @media (max-width: $md3+px) {
             flex-direction: row;
             align-content:center;
@@ -100,7 +97,6 @@
             bottom:2px;
         }
     }}
-
 }
 
 .footer__menu{

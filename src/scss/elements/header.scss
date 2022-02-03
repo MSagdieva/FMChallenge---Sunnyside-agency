@@ -28,7 +28,18 @@
         }
     
     &__menu{
-        
+        .menu__link:last-child{
+            background: #fff;
+            border-radius: 28px;
+            padding: 10px;
+            a {
+            color: #24303E;
+            font-size: 14px;
+            font-family: $fontFamily;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+        }
     }
 
 }

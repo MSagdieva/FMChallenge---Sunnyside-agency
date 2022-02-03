@@ -1,5 +1,6 @@
 .footer{
     &__content{
+        padding: 50px 0;
         background-color: #90D4C6;
         color:#fff;
         font-family: $SecondFontFamily;
@@ -39,4 +40,11 @@
 .socials{
     display:flex;
     justify-content: center;
+    &__link{
+        margin-left:10px;
+    }
+    &__icon img{
+        height: 16px;
+        width: 16px;
+    }
 }
