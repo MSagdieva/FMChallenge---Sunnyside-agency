@@ -1,10 +1,8 @@
 .header {
-    
     position:relative;
     z-index: 1000;
-    height:50px;
+    height:120px;
     width:100%;
-    background-color: rgba(50, 154, 240, 0.288);
     &__content {
         top: 0;
         left: 50%;
@@ -13,12 +11,13 @@
         height:100%;
         position:absolute;
         transform: translateX(-50%);
-        
+        padding: 35px 50px;
+        box-sizing: border-box;
     }
     &__icon-container{
         position: absolute;
-        left: 80px;
-        top: 11px;
+        left: 50px;
+        top: 50px;
         @media (max-width: $md4+px) {
             left: 10px;
         }
@@ -31,13 +30,22 @@
         .menu__link:last-child{
             background: #fff;
             border-radius: 28px;
-            padding: 10px;
+            padding: 15 30px;
             a {
             color: #24303E;
-            font-size: 14px;
+            font-size: 15px;
             font-family: $fontFamily;
             text-transform: uppercase;
             letter-spacing: -1px;
+        }
+        &:hover{
+            background: rgba(#fff, .25);
+            a {
+                display:block;
+                position:relative;
+                color: #fff;
+                z-index: 99999;
+            }
         }
         }
     }

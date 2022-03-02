@@ -34,6 +34,9 @@
         &__link a{
             color: #458D7E;
         }
+        &__link a:hover{
+            color: #fff;
+        }
     }
 
 }
@@ -43,8 +46,14 @@
     &__link{
         margin-left:10px;
     }
-    &__icon img{
-        height: 16px;
-        width: 16px;
+    &__link:nth-child(1) .socials__icon{
+        padding-top: 1px;
     }
+    &__icon svg{
+        fill: $icons;
+        &:hover{
+            fill:#fff!important;
+        }
+    }
+
 }

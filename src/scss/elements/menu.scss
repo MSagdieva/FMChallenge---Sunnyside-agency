@@ -36,12 +36,10 @@
             }
             }
         }
-
-
     }
 
     &__link {
-        font-size: 14px;
+        font-size: 18px;
         font-family: $SecondFontFamily;
         font-weight: 600;
         margin: 0;
@@ -57,10 +55,6 @@
             z-index: 2;
             padding: 0;
             margin: 20px;
-        }
-        &:hover{
-            transform: scaleX(1.2) scaleY(1.2);
-
         }
     }
     &__burger-icon{
