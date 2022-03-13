@@ -22,14 +22,25 @@
         }
     }
     &__icon-image{
-        fill: #2C7566;
-        stroke: red;
         @include adaptive-value('width', 140, 80, 0);
+        @media (max-width: $md4+px) {
+            margin: 10px 0;
         }
-    
+        }
+
+    &__menu{
+        width:100%;
+        .menu__list{
+            @media (max-width: $md4+px) {
+                width: 100%;
+            }
+        }
+    }
     .menu {
         &__body {
-
+            @media (max-width: $md4+px) {
+                width: 100%;
+            }
                 }
         &__link a{
             color: #458D7E;
@@ -43,6 +54,9 @@
 .socials{
     display:flex;
     justify-content: center;
+    @media (max-width: $md4+px) {
+        margin-top: 20px;
+    }
     &__link{
         margin-left:10px;
     }

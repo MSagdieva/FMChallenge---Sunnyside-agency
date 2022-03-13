@@ -44,11 +44,21 @@
                 width: 30px;
                 opacity: 1;
             }
+            @media (max-width:$md4+px) {
+                bottom: -110px;
+                &:after {
+                    background-size: contain;
+                    height: 50px;
+                    width:  70px;
+                }
+            }
         }
-
     &__container {
         padding: 200px 20px;
         position: relative;
+        @media (max-width:$md4+px) {
+            padding: 100px 20px 0 20px;
+        }
     }
 
     &__content {
