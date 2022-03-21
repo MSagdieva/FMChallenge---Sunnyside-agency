@@ -124,7 +124,7 @@ h2.title {
 .header__menu .menu__link:last-child {
   background: #fff;
   border-radius: 28px;
-  padding: 15 30px;
+  padding: 15px 30px;
 }
 
 .header__menu .menu__link:last-child a {
@@ -630,12 +630,24 @@ h2.title {
   }
 
   .main-block:nth-child(3) .text-container:nth-child(1) {
-    background-size: 130% 30%;
-    background-position: center top;
+    background-position: center bottom;
+    background-size: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
   }
 
   .main-block:nth-child(3) .text-container:nth-child(2) {
-    background-size: contain;
+    background-size: auto;
+    background-position: center bottom;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+  }
+
+  .img-container .ill {
+    -o-object-fit: initial;
+       object-fit: initial;
   }
 
   .main-block.info-block .text-container {
