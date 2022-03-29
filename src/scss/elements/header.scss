@@ -20,6 +20,7 @@
         top: 50px;
         @media (max-width: $md4+px) {
             left: 10px;
+            top: 25px;
         }
     }
     &__icon-image{
@@ -38,6 +39,11 @@
             text-transform: uppercase;
             letter-spacing: -1px;
         }
+        @media (max-width: $md4+px) {
+            background-color: #FBD600;
+            width: 25%;
+            margin: 0 auto;
+        }
         &:hover{
             background: rgba(#fff, .25);
             a {
@@ -45,6 +51,9 @@
                 position:relative;
                 color: #fff;
                 z-index: 99999;
+            }
+            @media (max-width: $md4+px) {
+                background: rgba(rgb(5, 5, 5), .25);
             }
         }
         }

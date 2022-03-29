@@ -44,6 +44,9 @@
                 }
         &__link a{
             color: #458D7E;
+            @media (max-width: $md4+px) {
+                margin-right: 20px;
+            }
         }
         &__link a:hover{
             color: #fff;
