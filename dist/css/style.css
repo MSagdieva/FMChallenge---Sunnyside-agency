@@ -125,11 +125,11 @@ h2.title {
   background: #fff;
   border-radius: 28px;
   padding: 15px 30px;
+  font-size: 15px;
 }
 
 .header__menu .menu__link:last-child a {
   color: #24303E;
-  font-size: 15px;
   font-family: "Fraunces";
   text-transform: uppercase;
   letter-spacing: -1px;
@@ -141,6 +141,7 @@ h2.title {
 
 .header__menu .menu__link:last-child:hover a {
   display: block;
+  font-size: 15px;
   position: relative;
   color: #fff;
   z-index: 99999;
@@ -148,6 +149,7 @@ h2.title {
 
 .menu {
   display: block;
+  width: 100%;
 }
 
 .menu__list {
@@ -156,6 +158,10 @@ h2.title {
   align-items: center;
   justify-content: flex-end;
   margin: 0;
+}
+
+.menu__body {
+  width: 100%;
 }
 
 .menu__link {
@@ -202,8 +208,8 @@ h2.title {
   left: 50%;
   bottom: -60px;
   transform: translateX(-50%);
-  width: 10px;
-  height: 30px;
+  height: 150px;
+  width: 30px;
   font-size: calc(14px + 4 * ((100vw - 320px) / 1600));
 }
 
@@ -213,8 +219,8 @@ h2.title {
   background-repeat: no-repeat;
   background-position: center;
   content: "";
-  height: 150px;
-  width: 30px;
+  height: 100%;
+  width: 100%;
   opacity: 1;
 }
 
@@ -268,11 +274,13 @@ h2.title {
 .main-block:nth-child(3) .text-container:nth-child(1) {
   background: url("../img/desktop/image-graphic-design.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .main-block:nth-child(3) .text-container:nth-child(2) {
   background: url("../img/desktop/image-photography.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .img-container {
@@ -525,6 +533,10 @@ h2.title {
     padding: 0 10px;
   }
 
+  .header__content {
+    padding: 35px 0;
+  }
+
   .header__icon-container {
     left: 10px;
     top: 25px;
@@ -542,20 +554,34 @@ h2.title {
 
   .menu__list {
     display: none;
+    width: 90%;
+    box-sizing: border-box;
   }
 
   .menu__list.active {
     display: block;
     flex-direction: column;
-    width: 90%;
     flex-wrap: nowrap;
     align-items: center;
     height: initial;
-    overflow: scroll;
     right: 0;
-    margin: 20px;
+    margin: 50px auto;
+    padding: 20px;
     background-color: #fff;
     position: relative;
+  }
+
+  .menu__list.active:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 30px 0;
+    border-color: transparent white transparent  transparent;
+    top: -20px;
+    right: 0;
   }
 
   .menu__list:hover .menu__link {
@@ -611,17 +637,12 @@ h2.title {
   }
 
   .main-heading {
-    height: 300px;
+    height: 538px;
+    background-size: 190% 100%;
   }
 
   .main-heading_btn {
-    bottom: -110px;
-  }
-
-  .main-heading_btn:after {
-    background-size: contain;
-    height: 50px;
-    width: 70px;
+    bottom: -192px;
   }
 
   .main-heading__container {
@@ -638,7 +659,8 @@ h2.title {
   }
 
   .main-heading__title {
-    font-size: 30px;
+    font-size: 36px;
+    letter-spacing: 6.25px;
   }
 
   .info-block__container {

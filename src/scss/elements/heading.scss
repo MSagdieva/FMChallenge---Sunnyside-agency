@@ -18,7 +18,8 @@
             background-position: center;
         }
         @media (max-width:$md4+px) {
-            height: 300px;
+            height: 538px;
+            background-size: 190% 100%;
         }
         &_btn {
             padding: 15px 40px 15px 0;
@@ -28,8 +29,8 @@
             left: 50%;
             bottom: -60px;
             transform: translateX(-50%);
-            width: 10px;
-            height: 30px;
+            height: 150px;
+            width: 30px;
             @include adaptive-value("font-size",
             18,
             14,
@@ -40,17 +41,12 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 content: "";
-                height: 150px;
-                width: 30px;
+                height: 100%;
+                width: 100%;
                 opacity: 1;
             }
             @media (max-width:$md4+px) {
-                bottom: -110px;
-                &:after {
-                    background-size: contain;
-                    height: 50px;
-                    width:  70px;
-                }
+                bottom: -192px;
             }
         }
     &__container {
@@ -91,7 +87,8 @@
         text-transform: uppercase;
         margin:0;
         @media (max-width: $md4+px) {
-            font-size: 30px;
+            font-size: 36px;
+            letter-spacing: 6.25px;
         }
     }
 

@@ -26,6 +26,7 @@
 .main-block:nth-child(3) .text-container:nth-child(1){
     background: url("../img/desktop/image-graphic-design.jpg");
     background-size: cover;
+    background-position: center;
     @media (max-width: $md4+px) {
         background-position: center bottom;
         background-size: auto;
@@ -37,6 +38,7 @@
 .main-block:nth-child(3) .text-container:nth-child(2){
     background: url("../img/desktop/image-photography.jpg");
     background-size: cover;
+    background-position: center;
     @media (max-width: $md4+px) {
         background-size: auto;
         background-position: center bottom;
