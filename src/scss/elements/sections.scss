@@ -69,8 +69,9 @@
 .main-block.info-block .text-container { 
 padding: 150px;
 background-color: #F2F2F2;
-@media (max-width: $md4+px){
+@media (max-width: $md2+px){
     padding: 30px;
+    text-align: center;
 } 
 .text { 
     @include adaptive-value('font-size', 18, 14, 0);
@@ -96,6 +97,10 @@ background-color: #F2F2F2;
     .main-block.info-block:nth-child(3) .text-container{
         padding: 300px 150px 50px 150px;
         text-align: center;
+        @media (max-width: $md2+px){
+            padding: 150px 30px;
+            height: 350px;
+        }
         @media (max-width: $md4+px){
             padding: 0 30px;
             height: 600px;
@@ -130,6 +135,9 @@ background-color: #F2F2F2;
     margin-bottom: 100px;
     &__block{
         margin-right: 30px;
+        @media (max-width: $md4+px){
+            margin-top: 60px;
+        }
     }
     &__block:last-child{
         margin-right: 0;
