@@ -107,7 +107,7 @@ h2.title {
   height: 100%;
   position: absolute;
   transform: translateX(-50%);
-  padding: 35px 50px;
+  padding: 30px 40px;
   box-sizing: border-box;
 }
 
@@ -118,7 +118,7 @@ h2.title {
 }
 
 .header__icon-image {
-  width: calc(80px + 60 * ((100vw - 320px) / 1600));
+  width: calc(125px + 15 * ((100vw - 320px) / 1600));
 }
 
 .header__menu .menu__link:last-child {
@@ -207,7 +207,7 @@ h2.title {
   position: absolute;
   left: 50%;
   bottom: -60px;
-  transform: translateX(-50%);
+  transform: translateX(-45%);
   height: 150px;
   width: 30px;
   font-size: calc(14px + 4 * ((100vw - 320px) / 1600));
@@ -306,10 +306,6 @@ h2.title {
 .main-block.info-block .text-container {
   padding: 150px;
   background-color: #F2F2F2;
-}
-
-.main-block.info-block .text-container .text {
-  font-size: calc(14px + 4 * ((100vw - 320px) / 1600));
 }
 
 .main_content__header {
@@ -430,6 +426,11 @@ h2.title {
   background-color: #a8a8a8;
 }
 
+.footer__info-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer__icon-image {
   width: 140px;
 }
@@ -440,6 +441,7 @@ h2.title {
 
 .footer .menu__link a {
   color: #458D7E;
+  font-size: 18px;
 }
 
 .footer .menu__link a:hover {
@@ -537,6 +539,11 @@ h2.title {
   h2.title {
     margin: 20px 0;
     text-align: center;
+    font-size: 28px;
+  }
+
+  .text {
+    font-size: 16px;
   }
 
   ._container {
@@ -549,8 +556,8 @@ h2.title {
   }
 
   .header__icon-container {
-    left: 10px;
-    top: 25px;
+    left: 24px;
+    top: 32px;
   }
 
   .header__menu .menu__link:last-child {
@@ -612,18 +619,18 @@ h2.title {
 
   .menu__burger-icon {
     display: block;
-    width: 30px;
+    width: 25px;
     height: 20px;
     color: #fff;
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 23px;
+    top: 35px;
   }
 
   .menu__burger-icon span {
     display: block;
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: #fff;
     position: absolute;
     top: 40%;
@@ -634,7 +641,7 @@ h2.title {
     position: absolute;
     content: '';
     width: 100%;
-    height: 3px;
+    height: 1px;
     background-color: #fff;
     left: 0;
   }
@@ -648,16 +655,18 @@ h2.title {
   }
 
   .main-heading {
+    background: url("../img/mobile/image-header.jpg");
+    background-size: 100% 100%;
     height: 538px;
-    background-size: 190% 100%;
+    background-position: bottom;
   }
 
   .main-heading_btn {
-    bottom: -192px;
+    bottom: -200px;
   }
 
   .main-heading__container {
-    padding: 100px 20px 0 20px;
+    padding: 145px 50px 0 40px;
   }
 
   .main-heading__content {
@@ -670,8 +679,9 @@ h2.title {
   }
 
   .main-heading__title {
-    font-size: 36px;
-    letter-spacing: 6.25px;
+    font-size: 40px;
+    letter-spacing: 6px;
+    line-height: 1.2;
   }
 
   .info-block__container {
@@ -703,6 +713,28 @@ h2.title {
        object-fit: initial;
   }
 
+  .main-block.info-block .text-container {
+    padding: 68px 25px;
+  }
+
+  .main-block.info-block .text-container .text {
+    line-height: 1.75;
+    font-size: 18px;
+    margin: 0;
+    margin-top: 25px;
+    color: #808397;
+  }
+
+  .main-block.info-block .text-container .title {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  .main-block.info-block .text-container .btn {
+    margin-top: 25px;
+    font-size: 16px;
+  }
+
   .main_content .main-block.info-block div {
     width: 100%;
   }
@@ -712,8 +744,13 @@ h2.title {
   }
 
   .main_content .main-block.info-block:nth-child(3) .text-container {
-    padding: 0 30px;
+    padding: 50px 25px;
     height: 600px;
+  }
+
+  .main_content .main-block.info-block:nth-child(3) .text-container .title {
+    font-size: 28px;
+    margin: 0;
   }
 
   .main_content .img-container {
@@ -729,8 +766,17 @@ h2.title {
     position: static;
   }
 
+  .reviews {
+    margin-top: 70px;
+  }
+
   .reviews__block {
     margin-top: 60px;
+    margin-right: 0;
+  }
+
+  .reviews__title {
+    font-size: 16px !important;
   }
 
   .photo-section__container.info-block__container .info-block.photo-block {
@@ -749,9 +795,13 @@ h2.title {
     margin: 10px 0;
   }
 
+  .footer__menu {
+    margin-top: 40px;
+  }
+
   .footer__menu .menu__list {
-    margin-top: 50px;
     width: 100%;
+    position: static;
   }
 
   .footer .menu__body {
@@ -760,11 +810,11 @@ h2.title {
   }
 
   .footer .menu__link a {
-    margin-right: 25px;
-    margin-left: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 
   .socials {
-    margin-top: 20px;
+    margin-top: 80px;
   }
 }

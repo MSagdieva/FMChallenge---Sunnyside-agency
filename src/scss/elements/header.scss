@@ -11,7 +11,7 @@
         height:100%;
         position:absolute;
         transform: translateX(-50%);
-        padding: 35px 50px;
+        padding: 30px 40px;
         box-sizing: border-box;
         @media (max-width: $md4+px) {
             padding: 35px 0;
@@ -22,12 +22,12 @@
         left: 50px;
         top: 50px;
         @media (max-width: $md4+px) {
-            left: 10px;
-            top: 25px;
+            left: 24px;
+            top: 32px;
         }
     }
     &__icon-image{
-        @include adaptive-value('width', 140, 80, 0);
+        @include adaptive-value('width', 140, 125, 0);
         }
     
     &__menu{

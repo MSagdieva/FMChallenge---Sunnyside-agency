@@ -72,10 +72,26 @@ background-color: #F2F2F2;
 @media (max-width: $md2+px){
     padding: 30px;
     text-align: center;
-} 
-.text { 
-    @include adaptive-value('font-size', 18, 14, 0);
 }
+@media (max-width: $md4+px){
+    padding: 68px 25px;
+.text { 
+    line-height: 1.75;
+    font-size: 18px;
+    margin: 0;
+    margin-top: 25px;
+    color: rgba(128, 131, 151, 1);
+}
+.title{
+    font-size: 32px;
+    margin:0;
+}
+.btn{
+    margin-top: 25px;
+    font-size: 16px;
+}
+} 
+
 }
 .main_content{
     &__header{
@@ -94,7 +110,8 @@ background-color: #F2F2F2;
             display:block;
         }    
     }
-    .main-block.info-block:nth-child(3) .text-container{
+    .main-block.info-block:nth-child(3)
+    { .text-container{
         padding: 300px 150px 50px 150px;
         text-align: center;
         @media (max-width: $md2+px){
@@ -102,10 +119,15 @@ background-color: #F2F2F2;
             height: 350px;
         }
         @media (max-width: $md4+px){
-            padding: 0 30px;
+            padding: 50px 25px;
             height: 600px;
+            .title{
+                font-size: 28px;
+                margin:0;
+            }
         }
     }
+}
 
     .img-container{
         padding: 0;
@@ -133,10 +155,14 @@ background-color: #F2F2F2;
 }
 .reviews{
     margin-bottom: 100px;
+    @media (max-width: $md4+px){
+        margin-top: 70px;
+    }
     &__block{
         margin-right: 30px;
         @media (max-width: $md4+px){
             margin-top: 60px;
+            margin-right: 0;
         }
     }
     &__block:last-child{
@@ -167,6 +193,9 @@ background-color: #F2F2F2;
     letter-spacing: 5px;
     font-size: 20px;
     line-height: 1.2;
+    @media (max-width: $md4+px){
+        font-size: 16px!important;
+    }
 }
 &__client-text{
     font-size: 18px;

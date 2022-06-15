@@ -16,6 +16,10 @@
             background-color: rgb(168, 168, 168);
         }
     }
+    &__info-wrapper{
+        display:flex;
+        flex-direction:column;
+    }
     &__icon-container{
         @media (max-width: $md4+px) {
             
@@ -30,10 +34,13 @@
 
     &__menu{
         width:100%;
+        @media (max-width: $md4+px) {
+            margin-top: 40px;
+        }
         .menu__list{
             @media (max-width: $md4+px) {
-                margin-top: 50px;
                 width: 100%;
+                position:static;
             }
         }
     }
@@ -46,9 +53,11 @@
                 }
         &__link a{
             color: #458D7E;
+            font-size: 18px;
             @media (max-width: $md4+px) {
-                margin-right: 25px;
-                margin-left: 25px;
+                margin-right: 20px;
+                margin-left: 20px;
+
             }
         }
         &__link a:hover{
@@ -61,7 +70,7 @@
     display:flex;
     justify-content: center;
     @media (max-width: $md4+px) {
-        margin-top: 20px;
+        margin-top: 80px;
     }
     &__link{
         margin-left: 15px;
