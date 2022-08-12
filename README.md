@@ -34,7 +34,7 @@ See hover states for all interactive elements on the page
 
 ### Screenshot
 
-![ScreenShot]()
+![ScreenShot](https://github.com/MSagdieva/FMChallenge---Sunnyside-agency/blob/main/ScreenshotSunnysideAgency.png)
 
 
 ### Links
