@@ -38,9 +38,11 @@
             margin-top: 40px;
         }
         .menu__list{
-            @media (max-width: $md4+px) {
+            @media (max-width: $md3+px) {
                 width: 100%;
-                position:static;
+                position: static;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
@@ -54,10 +56,9 @@
         &__link a{
             color: #458D7E;
             font-size: 18px;
-            @media (max-width: $md4+px) {
+            @media (max-width: $md3+px) {
                 margin-right: 20px;
                 margin-left: 20px;
-
             }
         }
         &__link a:hover{
@@ -69,6 +70,7 @@
 .socials{
     display:flex;
     justify-content: center;
+    margin-top: 50px;
     @media (max-width: $md4+px) {
         margin-top: 80px;
     }
